@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="vaksin.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&family=Mada&display=swap" rel="stylesheet">
+     <meta charset="utf-8">
+     <title>Form Pendaftaran Vaksin</title>
+    </head>
+    <body>
+        <h1>Formulir Pendaftaran Vaksinasi Kucing</h1>
+        <h2>Klinik Tiara Senja<br>Perum Griya Inti Asri Jalan Dahlia No.C107</h2>
+        <h3>drh. Tiara Sekarsini</h3>
+        <hr>
+        <form action="#" class="container">
+            <fieldset>
+        <legend>Silahkan isi Data dibawah ini: </legend>
+        <p class="judul">Identitas Pemilik Kucing</p>
+        <fieldset>
+        <br>
+            <p>
+                <label for="namap">Nama Pemilik:</label>
+                <input type="text" name="namap" id="namap"/>
+            </p>
+            <br>
+            <p>
+                <label for="nohp">No.Telepon:</label>
+                <input type="text" name="nohp" id="nohp"/>
+            </p>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p class="judul">Identitas Kucing</p>
+        <br>
+            <p>
+                <label for="namak">Nama Kucing:</label>
+                <input type="text" name="namak" id="namak"/>
+            </p>
+            <br>
+            <p>
+                <label for="jenisK">Jenis Kelamin Kucing:</label>
+                <input type="radio" name="jenisK" id="jenisK" value="Jantan"/>Jantan
+                <input type="radio" name="jenisK" id="jenisK" value="Betina"/>Betina
+            </p>
+            <br>
+            <p>
+                <label>Umur Kucing:</label>
+                <select name="umurK" id="umurK">
+                    <option value="a">Kurang dari 1 Tahun</option>
+                    <option value="b">1 Tahun</option>
+                    <option value="c">2 Tahun</option>
+                    <option value="d">3 Tahun</option>
+                    <option value="e">4 Tahun</option>
+                    <option value="f">5 Tahun</option>
+                    <option value="g">Lebih dari 5 Tahun</option>
+            </select>
+            </p>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p class="judul">Tindak Vaksinasi</p>
+        <br>
+            <p>Apakah sebelumnya kucing anda pernah sakit? jika ya, silahkan isi</p>
+            <br>
+            <input type="checkbox" id="kendala" name="k" value="demam">
+            <label for="k1">Demam</label><br>
+            <input type="checkbox" id="kendala" name="k" value="flu">
+            <label for="k2">flue</label><br>
+            <input type="checkbox" id="kendala" name="k" value="mencret">
+            <label for="k3">Mencret</label><br>
+            <input type="checkbox" id="kendala" name="k" value="muntah">
+            <label for="k4">Muntah-muntah</label><br>
+            <p>
+                <label>Tanggal Vaksinasi:</label>
+                <input type="date" name="tanggal"/>
+            </p>
+            <br>
+            <p>
+                <label for="lVaksin">Jenis Layanan Vaksin:</label>
+                <input type="radio" name="lVaksin" id="lVaksin" value="Datang ke Klinik"/>Datang ke Klinik
+                <input type="radio" name="lVaksin" id="lVaksin" value="Vaksin dirumah"/>Vaksin dirumah
+                </p>
+                <br>
+            <p>Jika memilih vaksinasi dirumah, silahkan lengkap alamat</p><br>
+            <p>
+                <label for="almt">Alamat:</label>
+                <input type="text" name="almt" id="almt"/>
+            </p>
+        </fieldset>
+        <input type="button" value="Daftar Vaksin" style=" font-family: 'Itim', cursive; font-size:20px;background-color: grey; color: white;" onclick="display()"/>
+            </fieldset>
+        </form>
+        <script src="vaksin.js"></script>
+        
+        </body>
+</html>
